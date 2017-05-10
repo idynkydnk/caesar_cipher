@@ -8,7 +8,7 @@ post '/' do
   message = params[:message] || ""
   offset = params[:offset] || 0
   new_message = caesar_cipher(message, offset.to_i)
-  erb :index, :locals => {'new_message' => new_message, 'message' => message, 'offset' => offset}
+  erb :form, :locals => {'new_message' => new_message, 'message' => message, 'offset' => offset}
 end
 
 def caesar_cipher text, offset
