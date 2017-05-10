@@ -1,10 +1,14 @@
 <h1>The Form</h1>
 
-<form action="/" method="POST">
-  Message: <input type="text" name="message">
-  Offset: <input type="text" name="offset">
-  <input type="submit">
-</form>
+<div class="container">
+
+  <form  class="form-signin" action="/" method="POST">
+    <h2 class="form-signin-heading">Enter the message to be encrypted</h2>
+    <input id="inputMessage" class="form-control" placeholder="Message" type="text" name="message" required autofocus>
+    <input id="inputMessage" placeholder="Offset" class="form-control" type="text" name="offset" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Encrypt!</button>
+  </form>
+</div>
 
 <p>Original message - <%= message %></p>
 <p>Encrypted message - <%= new_message %></p>
