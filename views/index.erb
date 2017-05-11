@@ -1,6 +1,8 @@
-<br></br>
-<h3>Encrypted Message</h3>
-<p><%= new_message %></p>
-<br></br>
-<h3>Original Message</h3>
-<p><%= message %></p>
+<% if message.length > 0 %>
+  <br></br>
+  <h3>Encrypted Message</h3>
+  <p><%= new_message %></p>
+  <br></br>
+  <h3>Original Message</h3>
+  <p><%= message %></p>
+<% end %>
