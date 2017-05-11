@@ -1,7 +1,8 @@
 require 'sinatra'
 
 get '/' do
-  erb :form
+  message, new_message = "", ""
+  erb :index, :locals => {'new_message' => new_message, 'message' => message}
 end
 
 post '/' do
